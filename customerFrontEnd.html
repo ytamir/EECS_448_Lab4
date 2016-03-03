@@ -1,10 +1,57 @@
 <html>
     <head>
-      <script type="text/javascript" src="EECS_448_js.js"></script>
+      <script type="text/javascript" src="formChecker.js"></script>
+       <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
 
 
+   
+    <form action="customerBackend.php" method="get">
+ 		<p>
+	  How Many Elephants do you want?
+	 	
+	 	</p>
+
+		 100$: <input type="number" name="elephant" id="elephant"><br>
+		  <p>
+	 How many Kittens do you want?
+	 	
+	 	</p>
+         30$: <input type="number" name="kitten" id="kitten"><br>
+           <p>
+	 
+	 How many Turtles do you want?
+	 	
+	 	</p>
+         50$: <input type="number" name="turtle" id="turtle"><br>
+        
+    	   <p>
+	 
+	 What is your username?
+	 	
+	 	</p>
+	 	 Username: <input type="email" name="username" id="username"><br>
+	 	<p>
+	 
+	 What is your password?
+	 	
+	 	</p>
+	 	 Password: <input type="text" name="password" id="password"><br>
+	 
+
+
+     <p>
+	 
+	 What kind of shipping would you like?
+	 	
+	 	</p>
+
+		
+		    <input type="radio" name="ship" value="0" id="ship1"> Free 7 day<br>
+		    <input type="radio" name="ship" value="50" id="ship2"> $50.00 Over Night<br>
+		    <input type="radio" name="ship" value="5" id="ship3"> $5.00 Three Day<br>
+		 
 
 
 
@@ -20,8 +67,10 @@
 
 
 
+</form>
 
 
-    
+<button onclick="Exec3(document.getElementById('elephant').value,document.getElementById('kitten').value,document.getElementById('turtle').value,document.getElementById('username').value,document.getElementById('password').value,document.getElementById('ship1').checked,document.getElementById('ship2').checked,document.getElementById('ship3').checked)">Validate</button>
+
      </body>
      </html>
