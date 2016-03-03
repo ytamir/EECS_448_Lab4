@@ -7,7 +7,9 @@
 
 
    
-    <form action="customerBackend.php" method="get">
+    
+    <form onsubmit="return Exec3(document.getElementById('elephant').value,document.getElementById('kitten').value,document.getElementById('turtle').value,document.getElementById('username').value,document.getElementById('password').value,document.getElementById('ship1').checked,document.getElementById('ship2').checked,document.getElementById('ship3').checked)" action="customerBackend.php" method="get">
+   
  		<p>
 	  How Many Elephants do you want?
 	 	
@@ -64,13 +66,18 @@
 
 
 
+		<input type="reset" value="Reset">
+			
+ 		<input type="submit" value="Submit">
+ 			
+ 			
+ 		
+ 		</form>
+	
 
 
 
-</form>
 
-
-<button onclick="Exec3(document.getElementById('elephant').value,document.getElementById('kitten').value,document.getElementById('turtle').value,document.getElementById('username').value,document.getElementById('password').value,document.getElementById('ship1').checked,document.getElementById('ship2').checked,document.getElementById('ship3').checked)">Validate</button>
 
      </body>
      </html>

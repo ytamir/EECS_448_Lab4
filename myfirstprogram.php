@@ -2,7 +2,8 @@
 //Inside myfirstprogram.php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-
+echo "<table>";
+	     echo "<tr>";
 function sum($x, $y) {
     $z = $x + $y;
     return $z;
@@ -12,20 +13,22 @@ for ($a = 1; $a <= 100; $a++)
 	{
 		if ($a==1)
 		{
-			echo " $a ";
+			echo "<td>".$a."</td>";
 		}
-	    echo "$a ";
+	   echo "<td>".$a."</td>";
 	}  
-	echo "<br>";
+	 echo "</tr>";
 for ($x = 1; $x <= 100; $x++) {
-   echo "$x ";
+   echo "<tr>";
+   echo "<td>".$x."</td>";
 
 	for ($y = 1; $y <= 100; $y++) 
 	{
 		$z = $x * $y;
-	    echo "$z ";
+	    echo "<td>".$z."</td>";
 	}  
-	echo "<br>";
+	echo "</tr>";
 } 
 
+ echo "</table>";
 ?>
